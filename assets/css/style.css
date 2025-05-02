@@ -21,6 +21,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -80,7 +81,7 @@ body .full-width {
 }
 
 table {
-    min-width: 360px;
+    min-width: 34rem;
     border-collapse: collapse;
 }
 
@@ -456,5 +457,21 @@ tfoot td, table th {
     .espaçamento-menu {
         height: 0;
     }
+
+    .contact-img {
+        display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    .form-group input, .form-group textarea {
+    max-width: 90%;
+   }
+
+   .contact-content {
+    grid-template-columns: 1fr;
+    max-width: 36rem;
+    overflow-x: hidden;
+}
 }
     
